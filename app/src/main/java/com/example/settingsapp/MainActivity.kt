@@ -17,6 +17,7 @@ class MainActivity : AppCompatActivity() {
         val items = listOf(
             SettingsItem("Wi-Fi", Settings.ACTION_WIFI_SETTINGS),
             SettingsItem("Bluetooth", Settings.ACTION_BLUETOOTH_SETTINGS),
+            SettingsItem("NearLink", "android.settings.NEARLINK_SETTINGS"),
             SettingsItem("Экран", Settings.ACTION_DISPLAY_SETTINGS),
             SettingsItem("Звук", Settings.ACTION_SOUND_SETTINGS),
             SettingsItem("Приложения", Settings.ACTION_APPLICATION_SETTINGS),
