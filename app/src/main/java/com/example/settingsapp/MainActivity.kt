@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
 
     private val allItems = listOf(
         SettingsItem("Wi-Fi", "Подключение к сети", "📶", "#4C6EF5", Settings.ACTION_WIFI_SETTINGS, isSectionStart = true),
-        SettingsItem("NearLink", "Быстрое соединение устройств", "📡", "#0EA5A4", Settings.ACTION_SETTINGS),
+        SettingsItem("NearLink", "Быстрое соединение устройств", "📡", "#0EA5A4", Settings.ACTION_WIRELESS_SETTINGS),
 
         SettingsItem("Экран", "Яркость, тема, шрифт", "🖥️", "#8B5CF6", Settings.ACTION_DISPLAY_SETTINGS, isSectionStart = true),
         SettingsItem("Звук", "Громкость, вибрация", "🔊", "#A855F7", Settings.ACTION_SOUND_SETTINGS),
@@ -39,6 +39,10 @@ class MainActivity : AppCompatActivity() {
             openSettings(item.action)
         }
         findViewById<RecyclerView>(R.id.recyclerView).adapter = adapter
+
+        findViewById<android.widget.TextView>(R.id.controlCenterButton).setOnClickListener {
+            startActivity(Intent(this, ControlCenterActivity::class.java))
+        }
 
         findViewById<EditText>(R.id.searchInput).addTextChangedListener(object : TextWatcher {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}

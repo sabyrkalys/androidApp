@@ -4,4 +4,17 @@
     <string name="search_hint">Поиск настроек</string>
     <string name="nearlink_hint">NearLink включается вручную: Настройки → Ещё соединения → NearLink</string>
     <string name="unavailable_hint">Этот экран настроек недоступен на устройстве</string>
+    <string name="control_center_title">Управление</string>
+    <string name="control_center_button">Быстрое управление</string>
+    <string name="back">Назад</string>
+    <string name="flashlight_title">Фонарик</string>
+    <string name="brightness_title">Яркость</string>
+    <string name="toggle_on">Включён</string>
+    <string name="toggle_off">Выключен</string>
+    <string name="grant_brightness_permission">Разрешить управление яркостью</string>
+    <string name="flashlight_unavailable">На этом устройстве нет вспышки</string>
+    <string name="vpn_block_title">Блокировка VPN</string>
+    <string name="vpn_blocked">Заблокирован</string>
+    <string name="vpn_allowed">Разрешён</string>
+    <string name="vpn_not_device_owner">Функция требует прав владельца устройства.\nВыполните на компьютере через adb (на чистом устройстве, без добавленных аккаунтов):\nadb shell dpm set-device-owner com.example.settingsapp/.VpnAdminReceiver</string>
 </resources>
